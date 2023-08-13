@@ -1,0 +1,301 @@
+{
+	"namespaces": {
+		"-2": {
+			"id": -2,
+			"case": "case-sensitive",
+			"name": "Medio",
+			"subpages": false,
+			"canonical": "Media",
+			"content": false,
+			"nonincludable": false
+		},
+		"-1": {
+			"id": -1,
+			"case": "first-letter",
+			"name": "Especial",
+			"subpages": false,
+			"canonical": "Special",
+			"content": false,
+			"nonincludable": false
+		},
+		"0": {
+			"id": 0,
+			"case": "case-sensitive",
+			"name": "",
+			"subpages": false,
+			"content": true,
+			"nonincludable": false
+		},
+		"1": {
+			"id": 1,
+			"case": "case-sensitive",
+			"name": "Discusión",
+			"subpages": true,
+			"canonical": "Talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"2": {
+			"id": 2,
+			"case": "first-letter",
+			"name": "Usuario",
+			"subpages": true,
+			"canonical": "User",
+			"content": false,
+			"nonincludable": false
+		},
+		"3": {
+			"id": 3,
+			"case": "first-letter",
+			"name": "Usuario discusión",
+			"subpages": true,
+			"canonical": "User talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"4": {
+			"id": 4,
+			"case": "case-sensitive",
+			"name": "Wikcionario",
+			"subpages": true,
+			"canonical": "Project",
+			"content": false,
+			"nonincludable": false
+		},
+		"5": {
+			"id": 5,
+			"case": "case-sensitive",
+			"name": "Wikcionario discusión",
+			"subpages": true,
+			"canonical": "Project talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"6": {
+			"id": 6,
+			"case": "case-sensitive",
+			"name": "Archivo",
+			"subpages": false,
+			"canonical": "File",
+			"content": false,
+			"nonincludable": false
+		},
+		"7": {
+			"id": 7,
+			"case": "case-sensitive",
+			"name": "Archivo discusión",
+			"subpages": true,
+			"canonical": "File talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"8": {
+			"id": 8,
+			"case": "first-letter",
+			"name": "MediaWiki",
+			"subpages": true,
+			"canonical": "MediaWiki",
+			"content": false,
+			"nonincludable": false,
+			"namespaceprotection": "editinterface"
+		},
+		"9": {
+			"id": 9,
+			"case": "first-letter",
+			"name": "MediaWiki discusión",
+			"subpages": true,
+			"canonical": "MediaWiki talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"10": {
+			"id": 10,
+			"case": "case-sensitive",
+			"name": "Plantilla",
+			"subpages": true,
+			"canonical": "Template",
+			"content": false,
+			"nonincludable": false
+		},
+		"11": {
+			"id": 11,
+			"case": "case-sensitive",
+			"name": "Plantilla discusión",
+			"subpages": true,
+			"canonical": "Template talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"12": {
+			"id": 12,
+			"case": "case-sensitive",
+			"name": "Ayuda",
+			"subpages": true,
+			"canonical": "Help",
+			"content": false,
+			"nonincludable": false
+		},
+		"13": {
+			"id": 13,
+			"case": "case-sensitive",
+			"name": "Ayuda discusión",
+			"subpages": true,
+			"canonical": "Help talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"14": {
+			"id": 14,
+			"case": "case-sensitive",
+			"name": "Categoría",
+			"subpages": false,
+			"canonical": "Category",
+			"content": false,
+			"nonincludable": false
+		},
+		"15": {
+			"id": 15,
+			"case": "case-sensitive",
+			"name": "Categoría discusión",
+			"subpages": true,
+			"canonical": "Category talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"100": {
+			"id": 100,
+			"case": "case-sensitive",
+			"name": "Apéndice",
+			"subpages": true,
+			"canonical": "Apéndice",
+			"content": false,
+			"nonincludable": false
+		},
+		"101": {
+			"id": 101,
+			"case": "case-sensitive",
+			"name": "Apéndice Discusión",
+			"subpages": true,
+			"canonical": "Apéndice Discusión",
+			"content": false,
+			"nonincludable": false
+		},
+		"710": {
+			"id": 710,
+			"case": "case-sensitive",
+			"name": "TimedText",
+			"subpages": false,
+			"canonical": "TimedText",
+			"content": false,
+			"nonincludable": false
+		},
+		"711": {
+			"id": 711,
+			"case": "case-sensitive",
+			"name": "TimedText talk",
+			"subpages": false,
+			"canonical": "TimedText talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"828": {
+			"id": 828,
+			"case": "case-sensitive",
+			"name": "Módulo",
+			"subpages": true,
+			"canonical": "Module",
+			"content": false,
+			"nonincludable": false
+		},
+		"829": {
+			"id": 829,
+			"case": "case-sensitive",
+			"name": "Módulo discusión",
+			"subpages": true,
+			"canonical": "Module talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"2300": {
+			"id": 2300,
+			"case": "case-sensitive",
+			"name": "Accesorio",
+			"subpages": false,
+			"canonical": "Gadget",
+			"content": false,
+			"nonincludable": false,
+			"namespaceprotection": "gadgets-edit"
+		},
+		"2301": {
+			"id": 2301,
+			"case": "case-sensitive",
+			"name": "Accesorio discusión",
+			"subpages": false,
+			"canonical": "Gadget talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"2302": {
+			"id": 2302,
+			"case": "case-sensitive",
+			"name": "Accesorio definición",
+			"subpages": false,
+			"canonical": "Gadget definition",
+			"content": false,
+			"nonincludable": false,
+			"namespaceprotection": "gadgets-definition-edit",
+			"defaultcontentmodel": "GadgetDefinition"
+		},
+		"2303": {
+			"id": 2303,
+			"case": "case-sensitive",
+			"name": "Accesorio definición discusión",
+			"subpages": false,
+			"canonical": "Gadget definition talk",
+			"content": false,
+			"nonincludable": false
+		}
+	},
+	"namespacealiases": [
+		{
+			"id": 2,
+			"alias": "Usuaria"
+		},
+		{
+			"id": 3,
+			"alias": "Usuaria discusión"
+		},
+		{
+			"id": 4,
+			"alias": "WN"
+		},
+		{
+			"id": 4,
+			"alias": "WT"
+		},
+		{
+			"id": 4,
+			"alias": "Wiktionary"
+		},
+		{
+			"id": 5,
+			"alias": "Wiktionary talk"
+		},
+		{
+			"id": 6,
+			"alias": "Image"
+		},
+		{
+			"id": 6,
+			"alias": "Imagen"
+		},
+		{
+			"id": 7,
+			"alias": "Image talk"
+		},
+		{
+			"id": 7,
+			"alias": "Imagen discusión"
+		}
+	]
+}

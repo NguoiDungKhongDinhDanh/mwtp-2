@@ -1,0 +1,317 @@
+{
+	"namespaces": {
+		"-2": {
+			"id": -2,
+			"case": "first-letter",
+			"name": "Medium",
+			"subpages": false,
+			"canonical": "Media",
+			"content": false,
+			"nonincludable": false
+		},
+		"-1": {
+			"id": -1,
+			"case": "first-letter",
+			"name": "Spezial",
+			"subpages": false,
+			"canonical": "Special",
+			"content": false,
+			"nonincludable": false
+		},
+		"0": {
+			"id": 0,
+			"case": "first-letter",
+			"name": "",
+			"subpages": false,
+			"content": true,
+			"nonincludable": false
+		},
+		"1": {
+			"id": 1,
+			"case": "first-letter",
+			"name": "Diskussion",
+			"subpages": true,
+			"canonical": "Talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"2": {
+			"id": 2,
+			"case": "first-letter",
+			"name": "Benutzer",
+			"subpages": true,
+			"canonical": "User",
+			"content": false,
+			"nonincludable": false
+		},
+		"3": {
+			"id": 3,
+			"case": "first-letter",
+			"name": "Benutzer Diskussion",
+			"subpages": true,
+			"canonical": "User talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"4": {
+			"id": 4,
+			"case": "first-letter",
+			"name": "Wikipedia",
+			"subpages": true,
+			"canonical": "Project",
+			"content": false,
+			"nonincludable": false
+		},
+		"5": {
+			"id": 5,
+			"case": "first-letter",
+			"name": "Wikipedia Diskussion",
+			"subpages": true,
+			"canonical": "Project talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"6": {
+			"id": 6,
+			"case": "first-letter",
+			"name": "Datei",
+			"subpages": false,
+			"canonical": "File",
+			"content": false,
+			"nonincludable": false
+		},
+		"7": {
+			"id": 7,
+			"case": "first-letter",
+			"name": "Datei Diskussion",
+			"subpages": true,
+			"canonical": "File talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"8": {
+			"id": 8,
+			"case": "first-letter",
+			"name": "MediaWiki",
+			"subpages": false,
+			"canonical": "MediaWiki",
+			"content": false,
+			"nonincludable": false,
+			"namespaceprotection": "editinterface"
+		},
+		"9": {
+			"id": 9,
+			"case": "first-letter",
+			"name": "MediaWiki Diskussion",
+			"subpages": true,
+			"canonical": "MediaWiki talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"10": {
+			"id": 10,
+			"case": "first-letter",
+			"name": "Vorlage",
+			"subpages": true,
+			"canonical": "Template",
+			"content": false,
+			"nonincludable": false
+		},
+		"11": {
+			"id": 11,
+			"case": "first-letter",
+			"name": "Vorlage Diskussion",
+			"subpages": true,
+			"canonical": "Template talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"12": {
+			"id": 12,
+			"case": "first-letter",
+			"name": "Hilfe",
+			"subpages": true,
+			"canonical": "Help",
+			"content": false,
+			"nonincludable": false
+		},
+		"13": {
+			"id": 13,
+			"case": "first-letter",
+			"name": "Hilfe Diskussion",
+			"subpages": true,
+			"canonical": "Help talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"14": {
+			"id": 14,
+			"case": "first-letter",
+			"name": "Kategorie",
+			"subpages": true,
+			"canonical": "Category",
+			"content": false,
+			"nonincludable": false
+		},
+		"15": {
+			"id": 15,
+			"case": "first-letter",
+			"name": "Kategorie Diskussion",
+			"subpages": true,
+			"canonical": "Category talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"100": {
+			"id": 100,
+			"case": "first-letter",
+			"name": "Portal",
+			"subpages": true,
+			"canonical": "Portal",
+			"content": false,
+			"nonincludable": false
+		},
+		"101": {
+			"id": 101,
+			"case": "first-letter",
+			"name": "Portal Diskussion",
+			"subpages": true,
+			"canonical": "Portal Diskussion",
+			"content": false,
+			"nonincludable": false
+		},
+		"710": {
+			"id": 710,
+			"case": "first-letter",
+			"name": "TimedText",
+			"subpages": false,
+			"canonical": "TimedText",
+			"content": false,
+			"nonincludable": false
+		},
+		"711": {
+			"id": 711,
+			"case": "first-letter",
+			"name": "TimedText talk",
+			"subpages": false,
+			"canonical": "TimedText talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"828": {
+			"id": 828,
+			"case": "first-letter",
+			"name": "Modul",
+			"subpages": true,
+			"canonical": "Module",
+			"content": false,
+			"nonincludable": false
+		},
+		"829": {
+			"id": 829,
+			"case": "first-letter",
+			"name": "Modul Diskussion",
+			"subpages": true,
+			"canonical": "Module talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"2300": {
+			"id": 2300,
+			"case": "case-sensitive",
+			"name": "Gadget",
+			"subpages": false,
+			"canonical": "Gadget",
+			"content": false,
+			"nonincludable": false,
+			"namespaceprotection": "gadgets-edit"
+		},
+		"2301": {
+			"id": 2301,
+			"case": "case-sensitive",
+			"name": "Gadget Diskussion",
+			"subpages": false,
+			"canonical": "Gadget talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"2302": {
+			"id": 2302,
+			"case": "case-sensitive",
+			"name": "Gadget-Definition",
+			"subpages": false,
+			"canonical": "Gadget definition",
+			"content": false,
+			"nonincludable": false,
+			"namespaceprotection": "gadgets-definition-edit",
+			"defaultcontentmodel": "GadgetDefinition"
+		},
+		"2303": {
+			"id": 2303,
+			"case": "case-sensitive",
+			"name": "Gadget-Definition Diskussion",
+			"subpages": false,
+			"canonical": "Gadget definition talk",
+			"content": false,
+			"nonincludable": false
+		}
+	},
+	"namespacealiases": [
+		{
+			"id": 2,
+			"alias": "Benutzerin"
+		},
+		{
+			"id": 3,
+			"alias": "BD"
+		},
+		{
+			"id": 3,
+			"alias": "Benutzerin Diskussion"
+		},
+		{
+			"id": 4,
+			"alias": "WP"
+		},
+		{
+			"id": 5,
+			"alias": "WD"
+		},
+		{
+			"id": 5,
+			"alias": "Wikipedia talk"
+		},
+		{
+			"id": 6,
+			"alias": "Bild"
+		},
+		{
+			"id": 6,
+			"alias": "Image"
+		},
+		{
+			"id": 7,
+			"alias": "Bild Diskussion"
+		},
+		{
+			"id": 7,
+			"alias": "Image talk"
+		},
+		{
+			"id": 12,
+			"alias": "H"
+		},
+		{
+			"id": 13,
+			"alias": "HD"
+		},
+		{
+			"id": 100,
+			"alias": "P"
+		},
+		{
+			"id": 101,
+			"alias": "PD"
+		}
+	]
+}

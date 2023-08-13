@@ -1,0 +1,385 @@
+{
+	"namespaces": {
+		"-2": {
+			"id": -2,
+			"case": "first-letter",
+			"name": "미디어",
+			"subpages": false,
+			"canonical": "Media",
+			"content": false,
+			"nonincludable": false
+		},
+		"-1": {
+			"id": -1,
+			"case": "first-letter",
+			"name": "특수",
+			"subpages": false,
+			"canonical": "Special",
+			"content": false,
+			"nonincludable": false
+		},
+		"0": {
+			"id": 0,
+			"case": "first-letter",
+			"name": "",
+			"subpages": false,
+			"content": true,
+			"nonincludable": false
+		},
+		"1": {
+			"id": 1,
+			"case": "first-letter",
+			"name": "토론",
+			"subpages": true,
+			"canonical": "Talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"2": {
+			"id": 2,
+			"case": "first-letter",
+			"name": "사용자",
+			"subpages": true,
+			"canonical": "User",
+			"content": false,
+			"nonincludable": false
+		},
+		"3": {
+			"id": 3,
+			"case": "first-letter",
+			"name": "사용자토론",
+			"subpages": true,
+			"canonical": "User talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"4": {
+			"id": 4,
+			"case": "first-letter",
+			"name": "위키백과",
+			"subpages": true,
+			"canonical": "Project",
+			"content": false,
+			"nonincludable": false
+		},
+		"5": {
+			"id": 5,
+			"case": "first-letter",
+			"name": "위키백과토론",
+			"subpages": true,
+			"canonical": "Project talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"6": {
+			"id": 6,
+			"case": "first-letter",
+			"name": "파일",
+			"subpages": false,
+			"canonical": "File",
+			"content": false,
+			"nonincludable": false
+		},
+		"7": {
+			"id": 7,
+			"case": "first-letter",
+			"name": "파일토론",
+			"subpages": true,
+			"canonical": "File talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"8": {
+			"id": 8,
+			"case": "first-letter",
+			"name": "미디어위키",
+			"subpages": true,
+			"canonical": "MediaWiki",
+			"content": false,
+			"nonincludable": false,
+			"namespaceprotection": "editinterface"
+		},
+		"9": {
+			"id": 9,
+			"case": "first-letter",
+			"name": "미디어위키토론",
+			"subpages": true,
+			"canonical": "MediaWiki talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"10": {
+			"id": 10,
+			"case": "first-letter",
+			"name": "틀",
+			"subpages": true,
+			"canonical": "Template",
+			"content": false,
+			"nonincludable": false
+		},
+		"11": {
+			"id": 11,
+			"case": "first-letter",
+			"name": "틀토론",
+			"subpages": true,
+			"canonical": "Template talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"12": {
+			"id": 12,
+			"case": "first-letter",
+			"name": "도움말",
+			"subpages": true,
+			"canonical": "Help",
+			"content": false,
+			"nonincludable": false
+		},
+		"13": {
+			"id": 13,
+			"case": "first-letter",
+			"name": "도움말토론",
+			"subpages": true,
+			"canonical": "Help talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"14": {
+			"id": 14,
+			"case": "first-letter",
+			"name": "분류",
+			"subpages": false,
+			"canonical": "Category",
+			"content": false,
+			"nonincludable": false
+		},
+		"15": {
+			"id": 15,
+			"case": "first-letter",
+			"name": "분류토론",
+			"subpages": true,
+			"canonical": "Category talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"100": {
+			"id": 100,
+			"case": "first-letter",
+			"name": "포털",
+			"subpages": true,
+			"canonical": "포털",
+			"content": false,
+			"nonincludable": false
+		},
+		"101": {
+			"id": 101,
+			"case": "first-letter",
+			"name": "포털토론",
+			"subpages": true,
+			"canonical": "포털토론",
+			"content": false,
+			"nonincludable": false
+		},
+		"102": {
+			"id": 102,
+			"case": "first-letter",
+			"name": "위키프로젝트",
+			"subpages": true,
+			"canonical": "위키프로젝트",
+			"content": false,
+			"nonincludable": false
+		},
+		"103": {
+			"id": 103,
+			"case": "first-letter",
+			"name": "위키프로젝트토론",
+			"subpages": true,
+			"canonical": "위키프로젝트토론",
+			"content": false,
+			"nonincludable": false
+		},
+		"118": {
+			"id": 118,
+			"case": "first-letter",
+			"name": "초안",
+			"subpages": true,
+			"canonical": "초안",
+			"content": false,
+			"nonincludable": false
+		},
+		"119": {
+			"id": 119,
+			"case": "first-letter",
+			"name": "초안토론",
+			"subpages": true,
+			"canonical": "초안토론",
+			"content": false,
+			"nonincludable": false
+		},
+		"710": {
+			"id": 710,
+			"case": "first-letter",
+			"name": "TimedText",
+			"subpages": false,
+			"canonical": "TimedText",
+			"content": false,
+			"nonincludable": false
+		},
+		"711": {
+			"id": 711,
+			"case": "first-letter",
+			"name": "TimedText talk",
+			"subpages": false,
+			"canonical": "TimedText talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"828": {
+			"id": 828,
+			"case": "first-letter",
+			"name": "모듈",
+			"subpages": true,
+			"canonical": "Module",
+			"content": false,
+			"nonincludable": false
+		},
+		"829": {
+			"id": 829,
+			"case": "first-letter",
+			"name": "모듈토론",
+			"subpages": true,
+			"canonical": "Module talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"2300": {
+			"id": 2300,
+			"case": "case-sensitive",
+			"name": "소도구",
+			"subpages": false,
+			"canonical": "Gadget",
+			"content": false,
+			"nonincludable": false,
+			"namespaceprotection": "gadgets-edit"
+		},
+		"2301": {
+			"id": 2301,
+			"case": "case-sensitive",
+			"name": "소도구토론",
+			"subpages": false,
+			"canonical": "Gadget talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"2302": {
+			"id": 2302,
+			"case": "case-sensitive",
+			"name": "소도구정의",
+			"subpages": false,
+			"canonical": "Gadget definition",
+			"content": false,
+			"nonincludable": false,
+			"namespaceprotection": "gadgets-definition-edit",
+			"defaultcontentmodel": "GadgetDefinition"
+		},
+		"2303": {
+			"id": 2303,
+			"case": "case-sensitive",
+			"name": "소도구정의토론",
+			"subpages": false,
+			"canonical": "Gadget definition talk",
+			"content": false,
+			"nonincludable": false
+		}
+	},
+	"namespacealiases": [
+		{
+			"id": -1,
+			"alias": "특"
+		},
+		{
+			"id": -1,
+			"alias": "특수기능"
+		},
+		{
+			"id": 2,
+			"alias": "사"
+		},
+		{
+			"id": 3,
+			"alias": "사토"
+		},
+		{
+			"id": 4,
+			"alias": "WP"
+		},
+		{
+			"id": 4,
+			"alias": "Wikipedia"
+		},
+		{
+			"id": 4,
+			"alias": "백"
+		},
+		{
+			"id": 5,
+			"alias": "Wikipedia talk"
+		},
+		{
+			"id": 5,
+			"alias": "백토"
+		},
+		{
+			"id": 6,
+			"alias": "Image"
+		},
+		{
+			"id": 6,
+			"alias": "그림"
+		},
+		{
+			"id": 7,
+			"alias": "Image talk"
+		},
+		{
+			"id": 7,
+			"alias": "그림토론"
+		},
+		{
+			"id": 9,
+			"alias": "MediaWiki토론"
+		},
+		{
+			"id": 100,
+			"alias": "들"
+		},
+		{
+			"id": 100,
+			"alias": "들머리"
+		},
+		{
+			"id": 101,
+			"alias": "들머리토론"
+		},
+		{
+			"id": 101,
+			"alias": "들토"
+		},
+		{
+			"id": 102,
+			"alias": "프"
+		},
+		{
+			"id": 103,
+			"alias": "프토"
+		},
+		{
+			"id": 118,
+			"alias": "Draft"
+		},
+		{
+			"id": 119,
+			"alias": "Draft talk"
+		}
+	]
+}

@@ -1,0 +1,363 @@
+{
+	"namespaces": {
+		"-2": {
+			"id": -2,
+			"case": "first-letter",
+			"name": "メディア",
+			"subpages": false,
+			"canonical": "Media",
+			"content": false,
+			"nonincludable": false
+		},
+		"-1": {
+			"id": -1,
+			"case": "first-letter",
+			"name": "特別",
+			"subpages": false,
+			"canonical": "Special",
+			"content": false,
+			"nonincludable": false
+		},
+		"0": {
+			"id": 0,
+			"case": "first-letter",
+			"name": "",
+			"subpages": false,
+			"content": true,
+			"nonincludable": false
+		},
+		"1": {
+			"id": 1,
+			"case": "first-letter",
+			"name": "ノート",
+			"subpages": true,
+			"canonical": "Talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"2": {
+			"id": 2,
+			"case": "first-letter",
+			"name": "利用者",
+			"subpages": true,
+			"canonical": "User",
+			"content": false,
+			"nonincludable": false
+		},
+		"3": {
+			"id": 3,
+			"case": "first-letter",
+			"name": "利用者‐会話",
+			"subpages": true,
+			"canonical": "User talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"4": {
+			"id": 4,
+			"case": "first-letter",
+			"name": "Wikipedia",
+			"subpages": true,
+			"canonical": "Project",
+			"content": false,
+			"nonincludable": false
+		},
+		"5": {
+			"id": 5,
+			"case": "first-letter",
+			"name": "Wikipedia‐ノート",
+			"subpages": true,
+			"canonical": "Project talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"6": {
+			"id": 6,
+			"case": "first-letter",
+			"name": "ファイル",
+			"subpages": false,
+			"canonical": "File",
+			"content": false,
+			"nonincludable": false
+		},
+		"7": {
+			"id": 7,
+			"case": "first-letter",
+			"name": "ファイル‐ノート",
+			"subpages": true,
+			"canonical": "File talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"8": {
+			"id": 8,
+			"case": "first-letter",
+			"name": "MediaWiki",
+			"subpages": true,
+			"canonical": "MediaWiki",
+			"content": false,
+			"nonincludable": false,
+			"namespaceprotection": "editinterface"
+		},
+		"9": {
+			"id": 9,
+			"case": "first-letter",
+			"name": "MediaWiki‐ノート",
+			"subpages": true,
+			"canonical": "MediaWiki talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"10": {
+			"id": 10,
+			"case": "first-letter",
+			"name": "Template",
+			"subpages": true,
+			"canonical": "Template",
+			"content": false,
+			"nonincludable": false
+		},
+		"11": {
+			"id": 11,
+			"case": "first-letter",
+			"name": "Template‐ノート",
+			"subpages": true,
+			"canonical": "Template talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"12": {
+			"id": 12,
+			"case": "first-letter",
+			"name": "Help",
+			"subpages": true,
+			"canonical": "Help",
+			"content": false,
+			"nonincludable": false
+		},
+		"13": {
+			"id": 13,
+			"case": "first-letter",
+			"name": "Help‐ノート",
+			"subpages": true,
+			"canonical": "Help talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"14": {
+			"id": 14,
+			"case": "first-letter",
+			"name": "Category",
+			"subpages": false,
+			"canonical": "Category",
+			"content": false,
+			"nonincludable": false
+		},
+		"15": {
+			"id": 15,
+			"case": "first-letter",
+			"name": "Category‐ノート",
+			"subpages": true,
+			"canonical": "Category talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"100": {
+			"id": 100,
+			"case": "first-letter",
+			"name": "Portal",
+			"subpages": true,
+			"canonical": "Portal",
+			"content": false,
+			"nonincludable": false
+		},
+		"101": {
+			"id": 101,
+			"case": "first-letter",
+			"name": "Portal‐ノート",
+			"subpages": true,
+			"canonical": "Portal‐ノート",
+			"content": false,
+			"nonincludable": false
+		},
+		"102": {
+			"id": 102,
+			"case": "first-letter",
+			"name": "プロジェクト",
+			"subpages": true,
+			"canonical": "プロジェクト",
+			"content": false,
+			"nonincludable": false
+		},
+		"103": {
+			"id": 103,
+			"case": "first-letter",
+			"name": "プロジェクト‐ノート",
+			"subpages": true,
+			"canonical": "プロジェクト‐ノート",
+			"content": false,
+			"nonincludable": false
+		},
+		"710": {
+			"id": 710,
+			"case": "first-letter",
+			"name": "TimedText",
+			"subpages": false,
+			"canonical": "TimedText",
+			"content": false,
+			"nonincludable": false
+		},
+		"711": {
+			"id": 711,
+			"case": "first-letter",
+			"name": "TimedText talk",
+			"subpages": false,
+			"canonical": "TimedText talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"828": {
+			"id": 828,
+			"case": "first-letter",
+			"name": "モジュール",
+			"subpages": true,
+			"canonical": "Module",
+			"content": false,
+			"nonincludable": false
+		},
+		"829": {
+			"id": 829,
+			"case": "first-letter",
+			"name": "モジュール‐ノート",
+			"subpages": true,
+			"canonical": "Module talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"2300": {
+			"id": 2300,
+			"case": "case-sensitive",
+			"name": "Gadget",
+			"subpages": false,
+			"canonical": "Gadget",
+			"content": false,
+			"nonincludable": false,
+			"namespaceprotection": "gadgets-edit"
+		},
+		"2301": {
+			"id": 2301,
+			"case": "case-sensitive",
+			"name": "Gadget talk",
+			"subpages": false,
+			"canonical": "Gadget talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"2302": {
+			"id": 2302,
+			"case": "case-sensitive",
+			"name": "Gadget definition",
+			"subpages": false,
+			"canonical": "Gadget definition",
+			"content": false,
+			"nonincludable": false,
+			"namespaceprotection": "gadgets-definition-edit",
+			"defaultcontentmodel": "GadgetDefinition"
+		},
+		"2303": {
+			"id": 2303,
+			"case": "case-sensitive",
+			"name": "Gadget definition talk",
+			"subpages": false,
+			"canonical": "Gadget definition talk",
+			"content": false,
+			"nonincludable": false
+		}
+	},
+	"namespacealiases": [
+		{
+			"id": 1,
+			"alias": "トーク"
+		},
+		{
+			"id": 3,
+			"alias": "利用者・トーク"
+		},
+		{
+			"id": 4,
+			"alias": "WP"
+		},
+		{
+			"id": 5,
+			"alias": "Wikipedia talk"
+		},
+		{
+			"id": 5,
+			"alias": "Wikipedia・トーク"
+		},
+		{
+			"id": 6,
+			"alias": "Image"
+		},
+		{
+			"id": 6,
+			"alias": "画像"
+		},
+		{
+			"id": 7,
+			"alias": "Image talk"
+		},
+		{
+			"id": 7,
+			"alias": "ファイル・トーク"
+		},
+		{
+			"id": 7,
+			"alias": "画像‐ノート"
+		},
+		{
+			"id": 9,
+			"alias": "MediaWiki・トーク"
+		},
+		{
+			"id": 10,
+			"alias": "テンプレート"
+		},
+		{
+			"id": 11,
+			"alias": "テンプレート・トーク"
+		},
+		{
+			"id": 12,
+			"alias": "ヘルプ"
+		},
+		{
+			"id": 13,
+			"alias": "ヘルプ・トーク"
+		},
+		{
+			"id": 14,
+			"alias": "カテゴリ"
+		},
+		{
+			"id": 15,
+			"alias": "カテゴリ・トーク"
+		},
+		{
+			"id": 101,
+			"alias": "Portal・トーク"
+		},
+		{
+			"id": 101,
+			"alias": "ポータル‐ノート"
+		},
+		{
+			"id": 103,
+			"alias": "プロジェクト・トーク"
+		},
+		{
+			"id": 829,
+			"alias": "モジュール・トーク"
+		}
+	]
+}

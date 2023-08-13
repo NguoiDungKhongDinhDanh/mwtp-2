@@ -1,0 +1,29 @@
+from typing import Iterator, overload
+
+
+class NamespaceIDMap:
+	'''
+	An object that maps namespace names to their corresponding IDs.
+	'''
+	
+	_map: dict[str, int]
+	
+	def __init__(self) -> None: ...
+	
+	def __repr__(self) -> str: ...
+	
+	@overload
+	def __contains__(self, key: str) -> bool: ...
+	
+	@overload
+	def __contains__(self, key: object) -> bool: ...
+	
+	def __getitem__(self, key: str) -> int | None: ...
+	
+	def __setitem__(self, key: str, value: int) -> None: ...
+	
+	def __delitem__(self, key: str) -> None: ...
+	
+	def __len__(self) -> int: ...
+	
+	def __iter__(self) -> Iterator[str]: ...

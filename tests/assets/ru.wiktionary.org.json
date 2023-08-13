@@ -1,0 +1,419 @@
+{
+	"namespaces": {
+		"-2": {
+			"id": -2,
+			"case": "case-sensitive",
+			"name": "Медиа",
+			"subpages": false,
+			"canonical": "Media",
+			"content": false,
+			"nonincludable": false
+		},
+		"-1": {
+			"id": -1,
+			"case": "first-letter",
+			"name": "Служебная",
+			"subpages": false,
+			"canonical": "Special",
+			"content": false,
+			"nonincludable": false
+		},
+		"0": {
+			"id": 0,
+			"case": "case-sensitive",
+			"name": "",
+			"subpages": false,
+			"content": true,
+			"nonincludable": false
+		},
+		"1": {
+			"id": 1,
+			"case": "case-sensitive",
+			"name": "Обсуждение",
+			"subpages": true,
+			"canonical": "Talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"2": {
+			"id": 2,
+			"case": "first-letter",
+			"name": "Участник",
+			"subpages": true,
+			"canonical": "User",
+			"content": false,
+			"nonincludable": false
+		},
+		"3": {
+			"id": 3,
+			"case": "first-letter",
+			"name": "Обсуждение участника",
+			"subpages": true,
+			"canonical": "User talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"4": {
+			"id": 4,
+			"case": "case-sensitive",
+			"name": "Викисловарь",
+			"subpages": true,
+			"canonical": "Project",
+			"content": false,
+			"nonincludable": false
+		},
+		"5": {
+			"id": 5,
+			"case": "case-sensitive",
+			"name": "Обсуждение Викисловаря",
+			"subpages": true,
+			"canonical": "Project talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"6": {
+			"id": 6,
+			"case": "case-sensitive",
+			"name": "Файл",
+			"subpages": false,
+			"canonical": "File",
+			"content": false,
+			"nonincludable": false
+		},
+		"7": {
+			"id": 7,
+			"case": "case-sensitive",
+			"name": "Обсуждение файла",
+			"subpages": true,
+			"canonical": "File talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"8": {
+			"id": 8,
+			"case": "first-letter",
+			"name": "MediaWiki",
+			"subpages": true,
+			"canonical": "MediaWiki",
+			"content": false,
+			"nonincludable": false,
+			"namespaceprotection": "editinterface"
+		},
+		"9": {
+			"id": 9,
+			"case": "first-letter",
+			"name": "Обсуждение MediaWiki",
+			"subpages": true,
+			"canonical": "MediaWiki talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"10": {
+			"id": 10,
+			"case": "case-sensitive",
+			"name": "Шаблон",
+			"subpages": true,
+			"canonical": "Template",
+			"content": false,
+			"nonincludable": false
+		},
+		"11": {
+			"id": 11,
+			"case": "case-sensitive",
+			"name": "Обсуждение шаблона",
+			"subpages": true,
+			"canonical": "Template talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"12": {
+			"id": 12,
+			"case": "case-sensitive",
+			"name": "Справка",
+			"subpages": true,
+			"canonical": "Help",
+			"content": false,
+			"nonincludable": false
+		},
+		"13": {
+			"id": 13,
+			"case": "case-sensitive",
+			"name": "Обсуждение справки",
+			"subpages": true,
+			"canonical": "Help talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"14": {
+			"id": 14,
+			"case": "case-sensitive",
+			"name": "Категория",
+			"subpages": false,
+			"canonical": "Category",
+			"content": false,
+			"nonincludable": false
+		},
+		"15": {
+			"id": 15,
+			"case": "case-sensitive",
+			"name": "Обсуждение категории",
+			"subpages": true,
+			"canonical": "Category talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"100": {
+			"id": 100,
+			"case": "case-sensitive",
+			"name": "Приложение",
+			"subpages": true,
+			"canonical": "Приложение",
+			"content": false,
+			"nonincludable": false
+		},
+		"101": {
+			"id": 101,
+			"case": "case-sensitive",
+			"name": "Обсуждение приложения",
+			"subpages": true,
+			"canonical": "Обсуждение приложения",
+			"content": false,
+			"nonincludable": false
+		},
+		"102": {
+			"id": 102,
+			"case": "case-sensitive",
+			"name": "Конкорданс",
+			"subpages": true,
+			"canonical": "Конкорданс",
+			"content": false,
+			"nonincludable": false
+		},
+		"103": {
+			"id": 103,
+			"case": "case-sensitive",
+			"name": "Обсуждение конкорданса",
+			"subpages": true,
+			"canonical": "Обсуждение конкорданса",
+			"content": false,
+			"nonincludable": false
+		},
+		"104": {
+			"id": 104,
+			"case": "case-sensitive",
+			"name": "Индекс",
+			"subpages": true,
+			"canonical": "Индекс",
+			"content": false,
+			"nonincludable": false
+		},
+		"105": {
+			"id": 105,
+			"case": "case-sensitive",
+			"name": "Обсуждение индекса",
+			"subpages": true,
+			"canonical": "Обсуждение индекса",
+			"content": false,
+			"nonincludable": false
+		},
+		"106": {
+			"id": 106,
+			"case": "case-sensitive",
+			"name": "Рифмы",
+			"subpages": true,
+			"canonical": "Рифмы",
+			"content": false,
+			"nonincludable": false
+		},
+		"107": {
+			"id": 107,
+			"case": "case-sensitive",
+			"name": "Обсуждение рифм",
+			"subpages": true,
+			"canonical": "Обсуждение рифм",
+			"content": false,
+			"nonincludable": false
+		},
+		"710": {
+			"id": 710,
+			"case": "case-sensitive",
+			"name": "TimedText",
+			"subpages": false,
+			"canonical": "TimedText",
+			"content": false,
+			"nonincludable": false
+		},
+		"711": {
+			"id": 711,
+			"case": "case-sensitive",
+			"name": "TimedText talk",
+			"subpages": false,
+			"canonical": "TimedText talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"828": {
+			"id": 828,
+			"case": "case-sensitive",
+			"name": "Модуль",
+			"subpages": true,
+			"canonical": "Module",
+			"content": false,
+			"nonincludable": false
+		},
+		"829": {
+			"id": 829,
+			"case": "case-sensitive",
+			"name": "Обсуждение модуля",
+			"subpages": true,
+			"canonical": "Module talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"2300": {
+			"id": 2300,
+			"case": "case-sensitive",
+			"name": "Гаджет",
+			"subpages": false,
+			"canonical": "Gadget",
+			"content": false,
+			"nonincludable": false,
+			"namespaceprotection": "gadgets-edit"
+		},
+		"2301": {
+			"id": 2301,
+			"case": "case-sensitive",
+			"name": "Обсуждение гаджета",
+			"subpages": false,
+			"canonical": "Gadget talk",
+			"content": false,
+			"nonincludable": false
+		},
+		"2302": {
+			"id": 2302,
+			"case": "case-sensitive",
+			"name": "Определение гаджета",
+			"subpages": false,
+			"canonical": "Gadget definition",
+			"content": false,
+			"nonincludable": false,
+			"namespaceprotection": "gadgets-definition-edit",
+			"defaultcontentmodel": "GadgetDefinition"
+		},
+		"2303": {
+			"id": 2303,
+			"case": "case-sensitive",
+			"name": "Обсуждение определения гаджета",
+			"subpages": false,
+			"canonical": "Gadget definition talk",
+			"content": false,
+			"nonincludable": false
+		}
+	},
+	"namespacealiases": [
+		{
+			"id": 2,
+			"alias": "U"
+		},
+		{
+			"id": 2,
+			"alias": "У"
+		},
+		{
+			"id": 2,
+			"alias": "Участница"
+		},
+		{
+			"id": 3,
+			"alias": "UT"
+		},
+		{
+			"id": 3,
+			"alias": "ОУ"
+		},
+		{
+			"id": 3,
+			"alias": "Обсуждение участницы"
+		},
+		{
+			"id": 4,
+			"alias": "WT"
+		},
+		{
+			"id": 4,
+			"alias": "Wiktionary"
+		},
+		{
+			"id": 4,
+			"alias": "ВС"
+		},
+		{
+			"id": 5,
+			"alias": "Wiktionary talk"
+		},
+		{
+			"id": 6,
+			"alias": "Image"
+		},
+		{
+			"id": 6,
+			"alias": "Изображение"
+		},
+		{
+			"id": 7,
+			"alias": "Image talk"
+		},
+		{
+			"id": 7,
+			"alias": "Обсуждение изображения"
+		},
+		{
+			"id": 10,
+			"alias": "T"
+		},
+		{
+			"id": 10,
+			"alias": "Ш"
+		},
+		{
+			"id": 14,
+			"alias": "К"
+		},
+		{
+			"id": 100,
+			"alias": "Appendix"
+		},
+		{
+			"id": 101,
+			"alias": "Appendix talk"
+		},
+		{
+			"id": 102,
+			"alias": "Concordance"
+		},
+		{
+			"id": 103,
+			"alias": "Concordance talk"
+		},
+		{
+			"id": 104,
+			"alias": "Index"
+		},
+		{
+			"id": 105,
+			"alias": "Index talk"
+		},
+		{
+			"id": 106,
+			"alias": "Rhymes"
+		},
+		{
+			"id": 107,
+			"alias": "Rhymes talk"
+		},
+		{
+			"id": 828,
+			"alias": "М"
+		}
+	]
+}
