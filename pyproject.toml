@@ -4,7 +4,7 @@ version = "1.0.2"
 description = "A parser for MediaWiki titles"
 readme = "README.md"
 requires-python = ">=3.11"
-license = "GNU GPLv3"
+license = { file = "LICENSE" }
 keywords = [ "mediawiki", "title", "page name", "parser" ]
 authors = [
 	{ name = "NDKDD", email = "adhominem259@gmail.com" }
@@ -31,7 +31,6 @@ dev = [
 [project.urls]
 "Homepage" = "https://github.com/NguoiDungKhongDinhDanh/mwtp"
 "Bug tracker" = "https://github.com/NguoiDungKhongDinhDanh/mwtp/issues"
-"Source" = "https://github.com/NguoiDungKhongDinhDanh/mwtp"
 
 [build-system]
 requires = ["setuptools>=67.6.0", "wheel"]
