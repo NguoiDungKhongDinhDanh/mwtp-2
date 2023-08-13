@@ -12,11 +12,13 @@ authors = [
 classifiers = [
 	"Development Status :: 3 - Alpha",
 	"Intended Audience :: Developers",
+    "Operating System :: Microsoft :: Windows",
 	"Topic :: Software Development :: Build Tools",
 	"License :: OSI Approved :: GNU General Public License (GPL)",
 	"Programming Language :: Python :: 3",
 	"Programming Language :: Python :: 3.11",
 	"Programming Language :: Python :: 3 :: Only",
+	"Typing :: Typed"
 ]
 
 [project.optional-dependencies]
