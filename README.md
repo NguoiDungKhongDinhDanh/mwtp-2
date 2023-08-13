@@ -18,8 +18,8 @@ print(title)
 # Title(title = 'This/is A /talk page', namespace = 1)
 ```
 
-`namespaces_data` and `namespace_aliases` can be queried directly from a wiki's
-API using [`action=query&meta=siteinfo&siprop=namespaces|namespacealiases`][2]:
+`namespaces_data` and `namespace_aliases` can be queried directly [from a wiki's
+API][2] using `action=query&meta=siteinfo&siprop=namespaces|namespacealiases`:
 
 ```python
 namespaces_data = {
