@@ -1,7 +1,5 @@
 # MediaWikiTitleParser
 
-![Tests](https://github.com/NguoiDungKhongDinhDanh/mwtp/actions/workflows/tests.yaml/badge.svg)
-
 MWTP is a parser for MediaWiki titles. Its logic is partly derived from
 [mediawiki.Title][1], and hence is licensed under GNU GPL.
 
@@ -18,8 +16,8 @@ print(title)
 # Title(title = 'This/is A /talk page', namespace = 1)
 ```
 
-`namespaces_data` and `namespace_aliases` can be queried directly [from a wiki's
-API][2] using `action=query&meta=siteinfo&siprop=namespaces|namespacealiases`:
+`namespaces_data` and `namespace_aliases` can be queried directly from a wiki's
+API using [`action=query&meta=siteinfo&siprop=namespaces|namespacealiases`][2]:
 
 ```python
 namespaces_data = {
