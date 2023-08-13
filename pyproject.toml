@@ -5,18 +5,20 @@ description = "A parser for MediaWiki titles"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { file = "LICENSE" }
-keywords = [ "mediawiki", "title", "page name", "parser" ]
+keywords = ["mediawiki", "title", "page name", "parser"]
 authors = [
 	{ name = "NDKDD", email = "adhominem259@gmail.com" }
 ]
 classifiers = [
 	"Development Status :: 3 - Alpha",
 	"Intended Audience :: Developers",
+	"Operating System :: Microsoft :: Windows",
 	"Topic :: Software Development :: Build Tools",
 	"License :: OSI Approved :: GNU General Public License (GPL)",
 	"Programming Language :: Python :: 3",
 	"Programming Language :: Python :: 3.11",
 	"Programming Language :: Python :: 3 :: Only",
+	"Typing :: Typed"
 ]
 
 [project.optional-dependencies]
