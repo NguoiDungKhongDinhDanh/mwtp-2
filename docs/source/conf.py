@@ -17,4 +17,4 @@ exclude_patterns = []
 html_theme = 'press'
 html_static_path = ['_static']
 
-master_doc = 'source/index'
+master_doc = 'index'
