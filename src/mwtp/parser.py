@@ -1,16 +1,20 @@
 import re
 
-from ._php_to_upper_map import PHP_TO_UPPER_MAP
 from ._alias_record import AliasRecord
 from ._dcs import Namespace, NamespaceData
 from ._namespace_id_map import NamespaceIDMap
+from ._php_to_upper_map import PHP_TO_UPPER_MAP
 from ._title_like import TitleLike
 from .exceptions import (
-	TitleContainsHTMLEntity, TitleContainsIllegalCharacter,
+	TitleContainsHTMLEntity,
+	TitleContainsIllegalCharacter,
 	TitleContainsSignatureComponent,
-	TitleContainsURLEncodedCharacter, TitleHasRelativePathComponent,
-	TitleHasSecondLevelNamespace, TitleIsBlank,
-	TitleIsTooLong, TitleStartsWithColon
+	TitleContainsURLEncodedCharacter,
+	TitleHasRelativePathComponent,
+	TitleHasSecondLevelNamespace,
+	TitleIsBlank,
+	TitleIsTooLong,
+	TitleStartsWithColon
 )
 from .title import Title
 

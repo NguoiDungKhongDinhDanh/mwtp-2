@@ -1,5 +1,13 @@
 import re
-from typing import ClassVar, Literal, Mapping, NotRequired, overload, Sequence, TypedDict
+from typing import (
+	ClassVar,
+	Literal,
+	Mapping,
+	NotRequired,
+	overload,
+	Sequence,
+	TypedDict
+)
 
 from . import _dcs
 from ._alias_record import AliasRecord, NamespaceAlias
