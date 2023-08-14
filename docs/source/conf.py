@@ -8,8 +8,7 @@ extensions = [
 	'sphinx.ext.autosectionlabel',
 	'sphinx.ext.autosummary',
 	'sphinx.ext.duration',
-	'sphinx.ext.githubpages',
-	'sphinx_rtd_theme'
+	'sphinx.ext.githubpages'
 ]
 
 templates_path = ['_templates']
