@@ -160,9 +160,9 @@ class Parser:
 		if title_like.contains_signature_component():
 			raise TitleContainsSignatureComponent
 	
-	def _validate_page_name_length(self, page_name, namespace):
+	def _validate_page_name_length(self, title_like, namespace):
 		not_a_special_page = namespace != Namespace.SPECIAL
-		exceeds_max_byte_length = len(page_name) > self._TITLE_MAX_BYTES
+		exceeds_max_byte_length = len(title_like) > self._TITLE_MAX_BYTES
 		
 		if not_a_special_page and exceeds_max_byte_length:
 			raise TitleIsTooLong

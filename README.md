@@ -20,8 +20,9 @@ print(repr(title))
 # Title('Thảo luận:This/is A /talk page')
 ```
 
-`namespaces_data` and `namespace_aliases` can be queried directly from [a wiki's
-API][2] using `action=query&meta=siteinfo&siprop=namespaces|namespacealiases`:
+`namespaces_data` and `namespace_aliases` can be obtained by
+making a query to [a wiki's API][2] with
+`action=query&meta=siteinfo&siprop=namespaces|namespacealiases`:
 
 ```python
 namespaces_data = {
