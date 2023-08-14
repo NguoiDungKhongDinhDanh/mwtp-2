@@ -1,11 +1,12 @@
 import re
+from functools import total_ordering
 from typing import ClassVar, overload, Self
 
 from ._dcs import NamespaceData
 from .parser import Parser
 
 
-# @total_ordering
+@total_ordering
 class Title:
 	'''
 	Represents a MediaWiki title.
