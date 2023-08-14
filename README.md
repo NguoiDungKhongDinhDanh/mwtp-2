@@ -14,8 +14,8 @@ from mwtp import TitleParser as Parser
 parser = Parser(namespaces_data, namespace_aliases)
 title = parser.parse(' _ FoO: this/is A__/talk page _ ')
 
-print(title)
-# Title(title = 'This/is A /talk page', namespace = 1)
+print(repr(title))
+# Title('Thảo luận:This/is A /talk page')
 ```
 
 `namespaces_data` and `namespace_aliases` can be queried directly from [a wiki's
