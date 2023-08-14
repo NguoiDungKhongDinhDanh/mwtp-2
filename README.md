@@ -1,6 +1,8 @@
 # MediaWikiTitleParser
 
 ![Tests](https://github.com/NguoiDungKhongDinhDanh/mwtp/actions/workflows/tests.yaml/badge.svg)
+![License](https://img.shields.io/pypi/l/mwtp.svg)
+![Supported versions](https://img.shields.io/pypi/pyversions/mwtp.svg)
 
 MWTP is a parser for MediaWiki titles. Its logic is partly derived from
 [mediawiki.Title][1], and hence is licensed under GNU GPL.
