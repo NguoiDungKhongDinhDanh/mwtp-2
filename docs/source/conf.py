@@ -1,4 +1,3 @@
-
 project = 'mwtp'
 author = 'NDKDD'
 copyright = '2023, NDKDD'
@@ -17,3 +16,5 @@ exclude_patterns = []
 
 html_theme = 'press'
 html_static_path = ['_static']
+
+master_doc = 'index'
