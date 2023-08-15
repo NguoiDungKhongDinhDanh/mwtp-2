@@ -31,6 +31,7 @@ Since we are talking about Python packages, the only sane way to install ``mwtp`
 
    usage <source/usage>
    api <source/api>
+   mwtp
 
 
 Indices and tables
