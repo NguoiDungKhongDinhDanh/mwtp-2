@@ -54,5 +54,8 @@ namespace_aliases = [
 ]
 ```
 
+For more information, see [the documentation][3].
+
 [1]: https://github.com/wikimedia/mediawiki/tree/c237f0548845662759bfcc6419cec9ca02d03c18/resources/src/mediawiki.Title
 [2]: https://www.mediawiki.org/wiki/Special:ApiSandbox#action=query&meta=siteinfo&siprop=namespaces%7Cnamespacealiases
+[3]: https://mwtp.readthedocs.io/
