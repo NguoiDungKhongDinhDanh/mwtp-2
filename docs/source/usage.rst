@@ -63,7 +63,9 @@ using either:
 	str(title)                  # 'Talk:This/is A /talk page'
 	title.full_name             # 'Talk:This/is a /talk page'
 
-See :class:`the class's full method list <.title.Title>` for more
+See `the class's full method list`_ for more
 information.
 
+
 .. _making a query to a wiki's API: https://www.mediawiki.org/wiki/Special:ApiSandbox#action=query&meta=siteinfo&siprop=namespaces%7Cnamespacealiases
+.. _the class's full method list: title.html
