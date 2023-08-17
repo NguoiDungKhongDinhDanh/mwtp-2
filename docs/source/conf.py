@@ -6,7 +6,8 @@ version = '2.0'
 extensions = [
 	'sphinx.ext.autodoc',
 	'sphinx.ext.autosectionlabel',
-	'sphinx.ext.autosummary'
+	'sphinx.ext.autosummary',
+	'sphinx.ext.viewcode'
 ]
 
 templates_path = ['_templates']
