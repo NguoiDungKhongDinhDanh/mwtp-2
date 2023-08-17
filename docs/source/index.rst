@@ -1,4 +1,4 @@
-.. ReadTheDocs index.rst
+.. Sphinx index.rst
 
 
 MWTP documentation
@@ -10,8 +10,8 @@ using hard-coded data. Currently it only supports Python 3.11
 and later.
 
 It is authored and maintained by `NguoiDungKhongDinhDanh`_
-(a.k.a. NDKDD). Please direct any suggestions and bug reports
-`to GitHub`_.
+(a.k.a. NDKDD). Please direct any suggestions and bug
+reports `to GitHub`_.
 
 
 .. _MediaWiki: http://www.mediawiki.org
@@ -39,9 +39,9 @@ to install ``mwtp`` is to use |pip|_:
    :maxdepth: 2
    :caption: Contents:
 
-   Usage <source/usage>
-   Limitations <source/limitations>
-   API references <source/api>
+   Usage <usage>
+   Limitations <limitations>
+   API references <api>
 
 
 Indices and tables

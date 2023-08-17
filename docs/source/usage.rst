@@ -14,7 +14,7 @@ The parser works as simple as follows:
 	# Title('Talk:This/is A /talk page')
 
 ``namespaces_data`` and ``namespace_aliases`` can be obtained by
-making a query to a wiki's API with
+`making a query to a wiki's API`_ with
 ``action=query&meta=siteinfo&siprop=namespaces|namespacealiases``.
 Here's how they might look like:
 
@@ -63,5 +63,7 @@ using either:
 	str(title)                  # 'Talk:This/is A /talk page'
 	title.full_name             # 'Talk:This/is a /talk page'
 
-See :class:`the class's full method list <.Title>` for more
+See :class:`the class's full method list <.title.Title>` for more
 information.
+
+.. _making a query to a wiki's API: https://www.mediawiki.org/wiki/Special:ApiSandbox#action=query&meta=siteinfo&siprop=namespaces%7Cnamespacealiases

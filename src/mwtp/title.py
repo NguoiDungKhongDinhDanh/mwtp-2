@@ -1,31 +1,55 @@
 import re
 from functools import total_ordering
+from typing import ClassVar, Self, TYPE_CHECKING
 
-from ._dcs import Namespace
+from ._dcs import Namespace, NamespaceData
+
+
+if TYPE_CHECKING:
+	from .parser import Parser
 
 
 @total_ordering
 class Title:
+	'''
+	Represents a MediaWiki title.
+
+	This class is not meant to be used directly.
+	Use :meth:`Parser.parse <.parser.Parser.parse>` instead.
+	'''
 	
 	__slots__ = ('_name', '_namespace', '_parser')
 	
-	_extension = re.compile(r'(?<=\.)[^.\s]+$')
+	_extension: ClassVar[re.Pattern[str]] = \
+		re.compile(r'(?<=\.)[^.\s]+$')
 	
-	def __init__(self, name, *, namespace, parser):
+	_parser: 'Parser'
+	_name: str
+	_namespace: int
+	
+	def __init__(self, name: str, *, namespace: int, parser: 'Parser') -> None:
+		'''
+		Construct a Title object.
+
+		:param name: The page name part of the title.
+		:param namespace: The namespace of the title.
+		:param parser: The parser which constructed the title.
+		'''
+		
 		self._name = name
 		self._namespace = namespace
 		self._parser = parser
 	
-	def __str__(self):
+	def __str__(self) -> str:
 		return self.full_name
 	
-	def __repr__(self):
+	def __repr__(self) -> str:
 		return f'{self.__class__.__name__}({self.full_name!r})'
 	
-	def __hash__(self):
+	def __hash__(self) -> int:
 		return hash(self.full_name)
 	
-	def __lt__(self, other):
+	def __lt__(self, other: str | Self) -> bool:
 		if isinstance(other, self.__class__):
 			return self.full_name < other.full_name
 		
@@ -34,7 +58,7 @@ class Title:
 		
 		return NotImplemented
 	
-	def __eq__(self, other):
+	def __eq__(self, other: object) -> bool:
 		if isinstance(other, self.__class__):
 			return self.full_name == other.full_name
 		
@@ -43,38 +67,69 @@ class Title:
 		
 		return NotImplemented
 	
-	def __truediv__(self, other):
+	def __truediv__(self, other: str) -> 'Title':
 		return self._parser.parse(f'{self.full_name}/{other}')
 	
 	@property
-	def full_name(self):
+	def full_name(self) -> str:
+		'''
+		The full title (i.e. ``Namespace:Title`` or ``Title``).
+		'''
+		
 		if self.namespace != 0:
 			return f'{self.namespace_name}:{self._name}'
 		
 		return self.name
 	
 	@property
-	def namespace(self):
+	def namespace(self) -> int:
+		'''
+		The title's namespace ID.
+		'''
+		
 		return self._namespace
 	
 	@property
-	def name(self):
+	def name(self) -> str:
+		'''
+		The title without the namespace.
+		'''
+		
 		return self._name
 	
 	@property
-	def namespace_name(self):
+	def namespace_name(self) -> str:
+		'''
+		The localized name of the title's namespace.
+		'''
+		
 		return self.namespace_data.name
 	
 	@property
-	def namespace_data(self):
+	def namespace_data(self) -> NamespaceData:
+		'''
+		An object containing all known information
+		about the title's namespace.
+		This is retrieved from the parser.
+		'''
+		
 		return self._parser.namespace_data[str(self.namespace)]
 	
 	@property
-	def canonical_namespace_name(self):
+	def canonical_namespace_name(self) -> str | None:
+		'''
+		The canonical name of the title's namespace.
+		'''
+		
 		return self.namespace_data.canonical
 	
 	@property
-	def associated_namespace(self):
+	def associated_namespace(self) -> int | None:
+		'''
+		The ID of the talk or subject namespace to which
+		the title's namespace is associated with.
+		'''
+		
 		if self.namespace < 0:
 			return None
 		
@@ -84,7 +139,11 @@ class Title:
 			return self.namespace + 1
 	
 	@property
-	def associated_namespace_name(self):
+	def associated_namespace_name(self) -> str | None:
+		'''
+		The localized name of the title's associated namespace.
+		'''
+		
 		namespace_data = self.associated_namespace_data
 		
 		if namespace_data is None:
@@ -93,7 +152,14 @@ class Title:
 		return namespace_data.name
 	
 	@property
-	def associated_namespace_data(self):
+	def associated_namespace_data(self) -> NamespaceData | None:
+		'''
+		An object containing all known information about
+		the title's associated namespace or ``None`` if there
+		is no such namespace.
+		This is retrieved from the parser.
+		'''
+		
 		namespace_id = self.associated_namespace
 		
 		if namespace_id is None:
@@ -103,27 +169,49 @@ class Title:
 			.get(str(namespace_id))
 	
 	@property
-	def in_content_namespace(self):
+	def in_content_namespace(self) -> bool:
+		'''
+		Whether the namespace of the title is a content namespace.
+		'''
+		
 		return self.namespace_data.content
 	
 	@property
-	def title_fragments(self):
-		if self.namespace_data.subpages:
-			return tuple(self.name.split('/'))
+	def fragments(self) -> list[str]:
+		'''
+		If the namespace has ``.subpages == True``,
+		returns a list of strings generated from
+		splitting the title by ``/``.
+
+		Else, returns the name wrapped in a list.
+		'''
 		
-		return tuple([self.name])
+		if self.namespace_data.subpages:
+			return self.name.split('/')
+		
+		return [self.name]
 	
 	@property
-	def root(self):
+	def root(self) -> Self:
+		'''
+		A Title object representing the root title
+		of this title.
+		'''
+		
 		return self.__class__(
-			self.title_fragments[0],
+			self.fragments[0],
 			namespace = self.namespace,
 			parser = self._parser
 		)
 	
 	@property
-	def base(self):
-		fragments = self.title_fragments
+	def base(self) -> Self:
+		'''
+		A Title object representing the parent title
+		of this title.
+		'''
+		
+		fragments = self.fragments
 		
 		if len(fragments) == 1:
 			new_page_name = fragments[0]
@@ -137,16 +225,28 @@ class Title:
 		)
 	
 	@property
-	def tail(self):
+	def tail(self) -> str:
+		'''
+		The rightmost fragment of the title.
+		'''
 		# Naming reason: https://superuser.com/q/524724
-		return self.title_fragments[-1]
+		
+		return self.fragments[-1]
 	
 	@property
-	def is_subpage(self):
-		return len(self.title_fragments) > 1
+	def is_subpage(self) -> bool:
+		'''
+		Whether the title has a parent title.
+		'''
+		
+		return len(self.fragments) > 1
 	
 	@property
-	def extension(self):
+	def extension(self) -> str | None:
+		'''
+		The extension part of a file name, if any.
+		'''
+		
 		if self.namespace not in (Namespace.FILE, Namespace.FILE_TALK):
 			return None
 		
@@ -158,7 +258,12 @@ class Title:
 		return match.group(0)
 	
 	@property
-	def associated(self):
+	def associated(self) -> Self | None:
+		'''
+		The title associated to this title, or ``None``
+		if there is no such title.
+		'''
+		
 		associated_namespace = self.associated_namespace
 		
 		if associated_namespace is None:
@@ -166,19 +271,36 @@ class Title:
 		
 		return self.__class__(
 			self.name,
-			namespace = self.associated_namespace,
+			namespace = associated_namespace,
 			parser = self._parser
 		)
 	
 	@property
-	def subject(self):
-		if self.namespace < 0 or self.namespace % 2 == 0:
+	def subject(self) -> Self:
+		'''
+		The subject title correspond to this title.
+		Can be itself if it is a subject title.
+		'''
+		
+		associated = self.associated
+		
+		if associated is None:
 			return self
 		
-		return self.associated
+		if associated.namespace % 2 == 1:
+			return self
+		
+		return associated
+		
+		
 	
 	@property
-	def talk(self):
+	def talk(self) -> Self | None:
+		'''
+		The talk title correspond to this title,
+		or ``None`` if there is no such title.
+		'''
+		
 		if self.namespace < 0:
 			return None
 		

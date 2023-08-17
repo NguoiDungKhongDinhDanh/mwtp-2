@@ -1,0 +1,10 @@
+# Changelog
+
+## v2.0.0
+
+1. Add documentation in a Sphinx-friendly way.
+   (In other words, to merge .pyi files into .py files.)
+   Some interface names are also changed.
+2. Change some part of the code to a less smart version
+   so as to satisfy mypy.
+3. Change the name and return type of Title.fragments

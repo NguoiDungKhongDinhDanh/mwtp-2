@@ -1,8 +1,7 @@
-API
-===
+API references
+==============
 
-.. autosummary::
-   :toctree: generated
-
-   mwtp.parser.Parser
-   mwtp.title.Title
+.. toctree::
+   Parser <parser>
+   Title <title>
+   Exceptions <exceptions>

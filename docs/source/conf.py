@@ -1,14 +1,12 @@
 project = 'mwtp'
 author = 'NDKDD'
 copyright = '2023, NDKDD'
-version = '1.0'
+version = '2.0'
 
 extensions = [
 	'sphinx.ext.autodoc',
 	'sphinx.ext.autosectionlabel',
-	'sphinx.ext.autosummary',
-	'sphinx.ext.duration',
-	'sphinx.ext.githubpages'
+	'sphinx.ext.autosummary'
 ]
 
 templates_path = ['_templates']
