@@ -86,8 +86,8 @@ class Title:
 	
 	def __truediv__(self, other: str) -> Title:
 		'''
-		Add ``/`` and ``other`` to the title,
-		then pass that to the parser.
+		Add ``/`` and ``other`` to the title
+		and pass that to the parser.
 		'''
 		
 		return self + f'/{other}'
@@ -95,7 +95,7 @@ class Title:
 	@property
 	def full_name(self) -> str:
 		'''
-		The full title (i.e. ``Namespace:Title`` or ``Title``).
+		The full title (i.e. ``Namespace:Pagename`` or ``Pagename``).
 		'''
 		
 		if self.namespace != 0:
@@ -202,10 +202,9 @@ class Title:
 	def fragments(self) -> list[str]:
 		'''
 		If the namespace has ``.subpages == True``,
-		returns a list of strings generated from
-		splitting the title by ``/``.
-
-		Else, returns the name wrapped in a list.
+		return a list of strings generated from
+		splitting the title by ``/``. Else,
+		return the name wrapped in a list.
 		'''
 		
 		if self.namespace_data.subpages:

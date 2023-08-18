@@ -133,7 +133,7 @@ class Parser:
 		a valid title.
 
 		:param string: The string to parse.
-		:return: A :class:`Title`, if parsed successfully.
+		:return: A :class:`.Title`, if parsed successfully.
 		'''
 		
 		title_like = TitleLike(string)
