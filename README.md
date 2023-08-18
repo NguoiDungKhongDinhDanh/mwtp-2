@@ -31,18 +31,13 @@ namespaces_data = {
     'id': 0,
     'case': 'first-letter',
     'name': '',
-    'subpages': False,
-    'content': True,
-    'nonincludable': False
+    ...: ...
   },
   '1': {
     'id': 1,
     'case': 'first-letter',
     'name': 'Thảo luận',
-    'subpages': True,
-    'canonical': 'Talk',
-    'content': False,
-    'nonincludable': False
+    ...: ...
   },
   ...: ...
 }

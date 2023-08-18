@@ -1,5 +1,12 @@
 # Changelog
 
+## v2.1.2
+
+* Use lowercase names for GitHub workflows.
+* Remove excessive properties in README.md examples of
+  namespace_data and namespace_aliases.
+
+
 ## v2.1.1
 
 * Add a badge to README.md.
