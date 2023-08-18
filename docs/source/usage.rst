@@ -20,28 +20,28 @@ Here's how they might look like:
 .. code-block:: python
 
    namespaces_data = {
-    '0': {
-      'id': 0,
-      'case': 'first-letter',
-      'name': '',
-      'subpages': False,
-      'content': True,
-      'nonincludable': False
+     '0': {
+       'id': 0,
+       'case': 'first-letter',
+       'name': '',
+       'subpages': False,
+       'content': True,
+       'nonincludable': False
     },
     '1': {
-      'id': 1,
-      'case': 'first-letter',
-      'name': 'Talk',
-      'subpages': True,
-      'canonical': 'Talk',
-      'content': False,
-      'nonincludable': False
-    },
-    ...: ...
+       'id': 1,
+       'case': 'first-letter',
+       'name': 'Talk',
+       'subpages': True,
+       'canonical': 'Talk',
+       'content': False,
+       'nonincludable': False
+     },
+     ...: ...
    }
    namespace_aliases = [
-    { 'id': 1, 'alias': 'Foo' },
-    ...
+     { 'id': 1, 'alias': 'Foo' },
+     ...
    ]
 
 :meth:`.Parser.parse` returns a :class:`.Title` object
