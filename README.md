@@ -1,5 +1,6 @@
 # MediaWikiTitleParser
 
+![Documentation status](https://readthedocs.org/projects/mwtp/badge/?version=latest)
 ![Tests](https://github.com/NguoiDungKhongDinhDanh/mwtp/actions/workflows/tests.yaml/badge.svg)
 ![License](https://img.shields.io/pypi/l/mwtp.svg)
 ![Supported versions](https://img.shields.io/pypi/pyversions/mwtp.svg)
