@@ -3,9 +3,17 @@ mwtp.title
 
 .. currentmodule:: mwtp.title
 
+
 .. autoclass:: Title
 
    .. automethod:: __init__
+
+
+   .. rubric:: Methods
+
+   .. automethod:: __add__
+   .. automethod:: __truediv__
+
 
    .. rubric:: Properties
 

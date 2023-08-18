@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import re
 from functools import total_ordering
 from typing import ClassVar, Self, TYPE_CHECKING
@@ -23,11 +25,11 @@ class Title:
 	_extension: ClassVar[re.Pattern[str]] = \
 		re.compile(r'(?<=\.)[^.\s]+$')
 	
-	_parser: 'Parser'
+	_parser: Parser
 	_name: str
 	_namespace: int
 	
-	def __init__(self, name: str, *, namespace: int, parser: 'Parser') -> None:
+	def __init__(self, name: str, *, namespace: int, parser: Parser) -> None:
 		'''
 		Construct a Title object.
 
@@ -49,8 +51,8 @@ class Title:
 	def __hash__(self) -> int:
 		return hash(self.full_name)
 	
-	def __lt__(self, other: str | Self) -> bool:
-		if isinstance(other, self.__class__):
+	def __lt__(self, other: object) -> bool:
+		if isinstance(other, Title):
 			return self.full_name < other.full_name
 		
 		if isinstance(other, str):
@@ -59,7 +61,7 @@ class Title:
 		return NotImplemented
 	
 	def __eq__(self, other: object) -> bool:
-		if isinstance(other, self.__class__):
+		if isinstance(other, Title):
 			return self.full_name == other.full_name
 		
 		if isinstance(other, str):
@@ -67,8 +69,28 @@ class Title:
 		
 		return NotImplemented
 	
-	def __truediv__(self, other: str) -> 'Title':
-		return self._parser.parse(f'{self.full_name}/{other}')
+	def __add__(self, other: str) -> Title:
+		'''
+		Add a string to this title's full name
+		and pass that to the parser.
+		
+		A :class:`Title` cannot be added to one another
+		since there is no way to determine the namespace
+		of the new title.
+		'''
+		
+		if not isinstance(other, str):
+			return NotImplemented
+		
+		return self._parser.parse(f'{self}{other}')
+	
+	def __truediv__(self, other: str) -> Title:
+		'''
+		Add ``/`` and ``other`` to the title,
+		then pass that to the parser.
+		'''
+		
+		return self + f'/{other}'
 	
 	@property
 	def full_name(self) -> str:
@@ -291,8 +313,6 @@ class Title:
 			return self
 		
 		return associated
-		
-		
 	
 	@property
 	def talk(self) -> Self | None:

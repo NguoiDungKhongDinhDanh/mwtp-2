@@ -46,7 +46,7 @@ class TitleLike:
 		return item in self._string
 	
 	def __eq__(self, other: object) -> bool:
-		if isinstance(other, self.__class__):
+		if isinstance(other, TitleLike):
 			return str(self) == str(other)
 		
 		if isinstance(other, str):

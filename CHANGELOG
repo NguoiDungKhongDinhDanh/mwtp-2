@@ -1,5 +1,14 @@
 # Changelog
 
+## v2.1.0
+
+1. Implement Title.__add__.
+2. Fix some type hints for __lt__ and __eq__.
+3. Use __future__annotations__ instead of string escaping syntax.
+4. Fix minor issues in documentation.
+5. Turn off mypy's warn_unreachable.
+
+
 ## v2.0.0
 
 1. Add documentation in a Sphinx-friendly way.
@@ -7,4 +16,4 @@
    Some interface names are also changed.
 2. Change some part of the code to a less smart version
    so as to satisfy mypy.
-3. Change the name and return type of Title.fragments
+3. Change the name and return type of Title.fragments.

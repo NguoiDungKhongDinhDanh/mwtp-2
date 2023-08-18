@@ -3,6 +3,7 @@ mwtp.parser
 
 .. currentmodule:: mwtp.parser
 
+
 .. autoclass:: Parser
 
    .. automethod:: __init__

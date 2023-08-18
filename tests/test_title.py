@@ -136,6 +136,16 @@ def test_eq_str(talk_foobar):
 	assert talk_foobar == 'Talk:Foobar'
 
 
+def test_add_str(talk_foobar):
+	new_title = talk_foobar + ' bazqux'
+	assert new_title.full_name == 'Talk:Foobar bazqux'
+
+
+def test_add_non_str(talk_foobar, wikipedia_lorem_ipsum):
+	with pytest.raises(TypeError):
+		talk_foobar + wikipedia_lorem_ipsum
+
+
 def test_truediv(talk_foobar):
 	new_title = talk_foobar / 'Bazqux'
 	assert new_title.full_name == 'Talk:Foobar/Bazqux'
