@@ -45,7 +45,7 @@ Here's how they might look like:
 	 ...
 	]
 
-:meth:`~.TitleParser.parse` returns a :class:`.Title` object
+:meth:`.Parser.parse` returns a :class:`.Title` object
 which has a bunch of convenience properties for manipulating
 titles:
 

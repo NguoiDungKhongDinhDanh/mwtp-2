@@ -128,8 +128,9 @@ class Parser:
 	
 	def parse(self, string: str) -> Title:
 		'''
-		The main parsing method. Raises :class:`.InvalidTitle`
-		if the string is not a valid title.
+		The main parsing method. Raises a subclass of
+		:class:`.InvalidTitle` if the string is not
+		a valid title.
 
 		:param string: The string to parse.
 		:return: A :class:`Title`, if parsed successfully.
