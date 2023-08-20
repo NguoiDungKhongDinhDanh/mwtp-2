@@ -60,7 +60,7 @@ using either:
 .. code-block:: python
 
    str(title)                  # 'Talk:This/is A /talk page'
-   title.full_name             # 'Talk:This/is a /talk page'
+   title.full_name             # 'Talk:This/is A /talk page'
 
 Path-like operations are also supported:
 
