@@ -27,18 +27,8 @@ making a query to [a wiki's API][2] with
 
 ```python
 namespaces_data = {
-  '0': {
-    'id': 0,
-    'case': 'first-letter',
-    'name': '',
-    ...: ...
-  },
-  '1': {
-    'id': 1,
-    'case': 'first-letter',
-    'name': 'Thảo luận',
-    ...: ...
-  },
+  '0': { 'id': 0, 'case': 'first-letter', 'name': '',          ...: ... },
+  '1': { 'id': 1, 'case': 'first-letter', 'name': 'Thảo luận', ...: ... },
   ...: ...
 }
 ```
