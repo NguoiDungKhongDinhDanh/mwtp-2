@@ -1,6 +1,6 @@
 [project]
 name = "mwtp"
-version = "2.1.3"
+version = "2.1.4"
 description = "A parser for MediaWiki titles"
 readme = "README.md"
 requires-python = ">=3.11"
