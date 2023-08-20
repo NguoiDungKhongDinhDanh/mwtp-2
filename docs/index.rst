@@ -1,8 +1,8 @@
 .. ReadTheDocs index.rst
 
 
-MWTP documentation
-==================
+MWTP v\ |version| documentation
+===============================
 
 :mod:`mwtp` is a parser for `MediaWiki`_ titles which relies on
 information provided by user (`dependency injection`_) instead of
