@@ -67,7 +67,7 @@ Path-like operations are also supported:
 .. code-block:: python
 
    title + '/Foo'              # Title('Talk:This/is A /talk page/Foo')
-   title / 'Foo'               # Title('Talk:This/is a /talk page/Foo')
+   title / 'Foo'               # Title('Talk:This/is A /talk page/Foo')
 
 See `the class's full method list`_ for more
 information.
