@@ -6,7 +6,6 @@ version = '2.2'
 extensions = [
 	'sphinx.ext.autodoc',
 	'sphinx.ext.autosectionlabel',
-	'sphinx.ext.autosummary',
 	'sphinx.ext.viewcode'
 ]
 
