@@ -36,8 +36,8 @@ to install ``mwtp`` is to use |pip|_:
 
 
 .. toctree::
-   :maxdepth: 2
    :caption: Contents:
+   :maxdepth: 2
 
    Usage <usage>
    Limitations <limitations>

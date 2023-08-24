@@ -1,8 +1,8 @@
 import re
-from typing import ClassVar, Literal, Mapping, NotRequired, overload, Sequence, TypedDict
+from typing import ClassVar, Literal, Mapping, NotRequired, Sequence, TypedDict
 
 from ._alias_record import AliasRecord, NamespaceAlias
-from ._dcs import Namespace, NamespaceData
+from ._namespace_data import NamespaceData
 from ._namespace_id_map import NamespaceIDMap
 from ._php_to_upper_map import PHP_TO_UPPER_MAP
 from ._title_like import TitleLike
@@ -17,6 +17,7 @@ from .exceptions import (
 	TitleIsTooLong,
 	TitleStartsWithColon
 )
+from .namespace import Namespace
 from .title import Title
 
 

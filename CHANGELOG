@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.2.0
+
+* Split mwtp._dcs into mwtp._namespace_data and mwtp.namespace.
+* Add other default namespaces to Namespace.
+* Make Namespace public.
+* Add corresponding docs.
+
+
 ## v2.1.4
 
 * Make PyPI recognize that tests are not failing.

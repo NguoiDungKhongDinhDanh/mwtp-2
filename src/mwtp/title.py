@@ -4,7 +4,8 @@ import re
 from functools import total_ordering
 from typing import ClassVar, Self, TYPE_CHECKING
 
-from ._dcs import Namespace, NamespaceData
+from ._namespace_data import NamespaceData
+from .namespace import Namespace
 
 
 if TYPE_CHECKING:

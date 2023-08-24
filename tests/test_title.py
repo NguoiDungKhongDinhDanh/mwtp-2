@@ -5,7 +5,7 @@ from pathlib import Path
 import pytest
 
 from mwtp import Title, TitleParser
-from mwtp._dcs import NamespaceData
+from mwtp._namespace_data import NamespaceData
 
 
 @pytest.fixture(scope = 'module')
@@ -123,6 +123,11 @@ def test_lt_title(talk_foobar, category_barfoo):
 
 def test_lt_str(talk_foobar):
 	assert talk_foobar < 'User:Foobar'
+
+
+def test_lt_other(talk_foobar):
+	with pytest.raises(TypeError):
+		_ = talk_foobar < {}
 
 
 def test_eq_title(talk_foobar):

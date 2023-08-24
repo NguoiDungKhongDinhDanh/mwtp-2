@@ -1,7 +1,7 @@
 project = 'mwtp'
 author = 'NDKDD'
 copyright = '2023, NDKDD'
-version = '2.1'
+version = '2.2'
 
 extensions = [
 	'sphinx.ext.autodoc',
