@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import re
 from functools import total_ordering
-from typing import ClassVar, Self, TYPE_CHECKING
+from typing import ClassVar, TYPE_CHECKING, TypeVar
 
 from ._namespace_data import NamespaceData
 from .namespace import Namespace
@@ -10,6 +10,8 @@ from .namespace import Namespace
 
 if TYPE_CHECKING:
 	from .parser import Parser
+
+Self = TypeVar('Self', bound = 'Title')
 
 
 @total_ordering
@@ -214,7 +216,7 @@ class Title:
 		return [self.name]
 	
 	@property
-	def root(self) -> Self:
+	def root(self: Self) -> Self:
 		'''
 		A Title object representing the root title
 		of this title.
@@ -227,7 +229,7 @@ class Title:
 		)
 	
 	@property
-	def base(self) -> Self:
+	def base(self: Self) -> Self:
 		'''
 		A Title object representing the parent title
 		of this title.
@@ -280,7 +282,7 @@ class Title:
 		return match.group(0)
 	
 	@property
-	def associated(self) -> Self | None:
+	def associated(self: Self) -> Self | None:
 		'''
 		The title associated to this title, or ``None``
 		if there is no such title.
@@ -298,7 +300,7 @@ class Title:
 		)
 	
 	@property
-	def subject(self) -> Self:
+	def subject(self: Self) -> Self:
 		'''
 		The subject title correspond to this title.
 		Can be itself if it is a subject title.
@@ -315,7 +317,7 @@ class Title:
 		return associated
 	
 	@property
-	def talk(self) -> Self | None:
+	def talk(self: Self) -> Self | None:
 		'''
 		The talk title correspond to this title,
 		or ``None`` if there is no such title.

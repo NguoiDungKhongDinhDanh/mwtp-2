@@ -1,9 +1,9 @@
 [project]
 name = "mwtp"
-version = "2.2.0"
+version = "2.3.0"
 description = "A parser for MediaWiki titles"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.10"
 license = { text = "GPL-3.0-only" }
 keywords = [ "mediawiki", "title", "page name", "parser" ]
 authors = [
@@ -16,6 +16,7 @@ classifiers = [
 	"Topic :: Software Development :: Build Tools",
 	"License :: OSI Approved :: GNU General Public License (GPL)",
 	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3.10",
 	"Programming Language :: Python :: 3.11",
 	"Programming Language :: Python :: 3 :: Only",
 	"Typing :: Typed"
