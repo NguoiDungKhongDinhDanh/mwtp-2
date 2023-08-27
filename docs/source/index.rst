@@ -6,7 +6,7 @@ MWTP v\ |version| documentation
 
 :mod:`mwtp` is a parser for `MediaWiki`_ titles which relies on
 information provided by user (`dependency injection`_) instead of
-using hard-coded data. Currently it only supports Python 3.11
+using hard-coded data. Currently it only supports Python 3.10
 and later.
 
 It is authored and maintained by `NguoiDungKhongDinhDanh`_
