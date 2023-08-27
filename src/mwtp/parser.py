@@ -1,5 +1,5 @@
 import re
-from typing import ClassVar, Literal, Mapping, NotRequired, Sequence, TypedDict
+from typing import ClassVar, Literal, Mapping, Sequence, TypedDict
 
 from ._alias_record import AliasRecord, NamespaceAlias
 from ._namespace_data import NamespaceData
@@ -24,16 +24,27 @@ from .title import Title
 CasingRule = Literal['first-letter', 'case-sensitive']
 
 
-class NamespaceDataFromAPI(TypedDict):
+class NamespaceDataAlwaysPresent(TypedDict):
 	id: int
 	case: CasingRule
 	name: str
 	subpages: bool
 	content: bool
 	nonincludable: bool
-	canonical: NotRequired[str]
-	namespaceprotection: NotRequired[str]
-	defaultcontentmodel: NotRequired[str]
+
+
+class NamespaceDataMayNotPresent(TypedDict, total = False):
+	canonical: str
+	namespaceprotection: str
+	defaultcontentmodel: str
+
+
+class NamespaceDataFromAPI(
+	TypedDict,
+	NamespaceDataAlwaysPresent,
+	NamespaceDataMayNotPresent
+):
+	pass
 
 
 class NamespaceDataFromAPIWithAliases(NamespaceDataFromAPI):
@@ -227,7 +238,7 @@ class Parser:
 			raise TitleStartsWithColon
 		
 		if namespace is None or namespace_id is None:
-			return Namespace.MAIN, page_name
+			return int(Namespace.MAIN), page_name
 		
 		if namespace_id != Namespace.TALK or ':' not in page_name:
 			return namespace_id, page_name

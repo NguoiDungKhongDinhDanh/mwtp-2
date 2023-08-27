@@ -1,5 +1,10 @@
 # Changelog
 
+## v2.3.0
+
+* Make mwtp backward-compatible with Python 3.10.
+
+
 ## v2.2.0
 
 * Split mwtp._dcs into mwtp._namespace_data and mwtp.namespace.
