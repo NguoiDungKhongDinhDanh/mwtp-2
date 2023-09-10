@@ -40,7 +40,23 @@ namespace_aliases = [
 ]
 ```
 
+Note that the following format (`&formatversion=1`) is not supported.
+Always use `&formatversion=2` or `&formatversion=latest`.
+
+```python
+namespaces_data = {
+  '0': { 'id': 0, 'case': 'first-letter', '*': '',          ...: ... },
+  '1': { 'id': 1, 'case': 'first-letter', '*': 'Thảo luận', ...: ... },
+  ...: ...
+}
+namespace_aliases = [
+  { 'id': 1, '*': 'Foo' },
+  ...
+]
+```
+
 For more information, see [the documentation][3].
+
 
 [1]: https://github.com/wikimedia/mediawiki/tree/c237f0548845662759bfcc6419cec9ca02d03c18/resources/src/mediawiki.Title
 [2]: https://www.mediawiki.org/wiki/Special:ApiSandbox#action=query&meta=siteinfo&siprop=namespaces%7Cnamespacealiases

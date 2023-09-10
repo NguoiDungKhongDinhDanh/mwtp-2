@@ -1,5 +1,12 @@
 # Changelog
 
+## v2.3.1
+
+* Add notes about formatversion=1.
+* Add the .editorconfig file.
+* Remove modindex from index.rst.
+
+
 ## v2.3.0
 
 * Make mwtp backward-compatible with Python 3.10.

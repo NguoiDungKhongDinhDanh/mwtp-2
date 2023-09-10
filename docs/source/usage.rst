@@ -44,6 +44,12 @@ Here's how they might look like:
      ...
    ]
 
+Note that the following format (`&formatversion=1`) is not supported.
+Always use `&formatversion=2` or `&formatversion=latest`.
+
+.. code-block:: python
+
+
 :meth:`.Parser.parse` returns a :class:`.Title` object
 which has a bunch of convenience properties for
 title manipulation:
