@@ -3,6 +3,7 @@
 ## v2.3.2
 
 * Add build to pyproject.toml/[project.optional-dependencies]
+* Reorder requirements_dev.txt
 
 
 ## v2.3.1
