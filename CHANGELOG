@@ -4,6 +4,8 @@
 
 * Add build to pyproject.toml/[project.optional-dependencies]
 * Reorder requirements_dev.txt
+* Change development status classifier
+  from "3 - Alpha" to "5 - Production/Stable"
 
 
 ## v2.3.1

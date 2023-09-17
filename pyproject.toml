@@ -10,7 +10,7 @@ authors = [
 	{ name = "NDKDD", email = "adhominem259@gmail.com" }
 ]
 classifiers = [
-	"Development Status :: 3 - Alpha",
+	"Development Status :: 5 - Production/Stable",
 	"Intended Audience :: Developers",
 	"Operating System :: Microsoft :: Windows",
 	"Topic :: Software Development :: Build Tools",
