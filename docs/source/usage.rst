@@ -61,7 +61,7 @@ Always use `&formatversion=2` or `&formatversion=latest`.
 
 
 :meth:`.Parser.parse` returns a :class:`.Title` object
-which has a bunch of convenience properties for
+which has a bunch of convenient properties for
 title manipulation:
 
 .. code-block:: python
