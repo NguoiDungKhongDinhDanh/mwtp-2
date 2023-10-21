@@ -49,6 +49,16 @@ Always use `&formatversion=2` or `&formatversion=latest`.
 
 .. code-block:: python
 
+   namespaces_data = {
+     '0': { 'id': 0, 'case': 'first-letter', '*': '',          ...: ... },
+     '1': { 'id': 1, 'case': 'first-letter', '*': 'Thảo luận', ...: ... },
+     ...: ...
+   }
+   namespace_aliases = [
+     { 'id': 1, '*': 'Foo' },
+     ...
+   ]
+
 
 :meth:`.Parser.parse` returns a :class:`.Title` object
 which has a bunch of convenience properties for
