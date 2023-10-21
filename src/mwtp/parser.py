@@ -217,7 +217,7 @@ class Parser:
 		'''
 		Split the given title into two parts: namespace and page name.
 
-		:param title_like: The :class:``TitleLike`` object to be split.
+		:param title_like: The :class:`TitleLike` object to be split.
 		:return: A tuple consisting of the namespace and the page name.
 		'''
 		
