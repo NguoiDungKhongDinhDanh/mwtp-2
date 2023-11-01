@@ -1,5 +1,9 @@
 # Changelog
 
+## v3.0.0
+
+* Change the return type of Title.fragments back to tuple[str]
+
 ## v2.3.2
 
 * Add build to pyproject.toml/[project.optional-dependencies]

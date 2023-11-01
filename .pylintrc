@@ -1,0 +1,5 @@
+[MASTER]
+disable=
+	C0114,
+	W0311,
+	C0303

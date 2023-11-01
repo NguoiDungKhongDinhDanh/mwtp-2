@@ -160,8 +160,8 @@ class Title:
 		
 		if self.namespace % 2 == 1:
 			return self.namespace - 1
-		else:
-			return self.namespace + 1
+		
+		return self.namespace + 1
 	
 	@property
 	def associated_namespace_name(self) -> str | None:
@@ -202,7 +202,7 @@ class Title:
 		return self.namespace_data.content
 	
 	@property
-	def fragments(self) -> list[str]:
+	def fragments(self) -> tuple[str, ...]:
 		'''
 		If the namespace has ``.subpages == True``,
 		return a list of strings generated from
@@ -211,9 +211,9 @@ class Title:
 		'''
 		
 		if self.namespace_data.subpages:
-			return self.name.split('/')
+			return tuple(self.name.split('/'))
 		
-		return [self.name]
+		return tuple([self.name])
 	
 	@property
 	def root(self: Self) -> Self:
