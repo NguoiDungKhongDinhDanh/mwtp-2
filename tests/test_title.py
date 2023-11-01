@@ -213,12 +213,12 @@ def test_in_content_namespace(loremipsum):
 
 
 def test_fragments(wikipedia_lorem_ipsum):
-	assert wikipedia_lorem_ipsum.fragments == ['Lorem', 'Ipsum']
+	assert wikipedia_lorem_ipsum.fragments == ('Lorem', 'Ipsum')
 
 
 def test_fragments_no_subpage(special_blank_page):
 	new_title = special_blank_page / 'Foobar'
-	assert new_title.fragments == ['BlankPage/Foobar']
+	assert new_title.fragments == tuple(['BlankPage/Foobar'])
 
 
 def test_root(wikipedia_lorem_ipsum):
