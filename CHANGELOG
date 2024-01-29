@@ -1,5 +1,8 @@
 # Changelog
 
+## v3.0.1
+* Use black for formatting
+
 ## v3.0.0
 
 * Change the return type of Title.fragments back to tuple[str]
