@@ -216,10 +216,14 @@ class Parser:
         if title_like.starts_with(":"):
             raise TitleStartsWithColon
 
-        namespace, page_name = title_like.split_by_first_colon()
+        namespace_like, page_name_like = title_like.split_by_first_colon()
+        page_name = page_name_like
 
-        if namespace is not None:
-            namespace_id = self._namespace_id_map[namespace]
+        if namespace_like is not None:
+            namespace_id = self._namespace_id_map[namespace_like]
+
+            if namespace_id is None:
+                page_name = str(title_like)
         else:
             namespace_id = None
 
@@ -229,7 +233,7 @@ class Parser:
         if page_name.startswith(":"):
             raise TitleStartsWithColon
 
-        if namespace is None or namespace_id is None:
+        if namespace_id is None:
             return int(Namespace.MAIN), page_name
 
         if namespace_id != Namespace.TALK or ":" not in page_name:

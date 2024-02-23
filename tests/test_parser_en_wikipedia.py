@@ -65,6 +65,10 @@ def parser(en_wikipedia_parser):
         ### Unipain
         ("\ud81b\ude7ffoo", "\ud81b\ude7ffoo"),
         ("𖹿foo", "𖹿foo"),
+        ### With colons
+        ("Foo: bar", "Foo: bar"),
+        ("Foo:b:ar", "Foo:b:ar"),
+        ("Foo::bar", "Foo::bar"),
     ],
 )
 def test_parse_valid_title(parser, string, expected):
