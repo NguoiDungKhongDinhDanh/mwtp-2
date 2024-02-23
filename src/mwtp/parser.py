@@ -1,5 +1,7 @@
+from __future__ import annotations
+
 import re
-from typing import ClassVar, Literal, Mapping, Sequence, TypedDict
+from typing import TYPE_CHECKING, ClassVar, Literal, Mapping, Sequence, TypedDict
 
 from ._alias_record import AliasRecord, NamespaceAlias
 from ._namespace_data import NamespaceData
@@ -20,29 +22,20 @@ from .exceptions import (
 from .namespace import Namespace
 from .title import Title
 
+if TYPE_CHECKING:
+    from typing_extensions import NotRequired
 
-CasingRule = Literal["first-letter", "case-sensitive"]
 
-
-class NamespaceDataAlwaysPresent(TypedDict):
+class NamespaceDataFromAPI(TypedDict):
     id: int
-    case: CasingRule
+    case: Literal["first-letter", "case-sensitive"]
     name: str
     subpages: bool
     content: bool
     nonincludable: bool
-
-
-class NamespaceDataMayNotPresent(TypedDict, total=False):
-    canonical: str
-    namespaceprotection: str
-    defaultcontentmodel: str
-
-
-class NamespaceDataFromAPI(
-    TypedDict, NamespaceDataAlwaysPresent, NamespaceDataMayNotPresent
-):
-    pass
+    canonical: NotRequired[str]
+    namespaceprotection: NotRequired[str]
+    defaultcontentmodel: NotRequired[str]
 
 
 class NamespaceDataFromAPIWithAliases(NamespaceDataFromAPI):

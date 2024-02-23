@@ -1,11 +1,20 @@
 # Changelog
 
+
+## v4.0.0
+* Use typing_extensions.NotRequired for NamespaceDataFromAPI
+* Use __future__.annotations
+* Parsing titles with colons is now working properly
+
+
 ## v3.0.1
 * Use black for formatting
+
 
 ## v3.0.0
 
 * Change the return type of Title.fragments back to tuple[str]
+
 
 ## v2.3.2
 

@@ -2,14 +2,14 @@ from __future__ import annotations
 
 import re
 from functools import total_ordering
-from typing import ClassVar, TYPE_CHECKING, TypeVar
+from typing import TYPE_CHECKING, ClassVar, TypeVar
 
 from ._namespace_data import NamespaceData
 from .namespace import Namespace
 
-
 if TYPE_CHECKING:
     from .parser import Parser
+
 
 Self = TypeVar("Self", bound="Title")
 
